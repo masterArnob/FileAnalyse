@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fileanalyse.PrimaryController">
+   <children>
+      <Label layoutX="134.0" layoutY="24.0" prefHeight="29.0" prefWidth="251.0" text="File Analyzer">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button fx:id="Browse" layoutX="106.0" layoutY="168.0" mnemonicParsing="false" onAction="#fileReader" text="Browse" />
+      <Button fx:id="Analyse" layoutX="226.0" layoutY="244.0" mnemonicParsing="false" onAction="#doAnalyse" text="Analyse" />
+      <TextField fx:id="path" layoutX="185.0" layoutY="168.0" />
+      <TextArea fx:id="result" disable="true" layoutX="123.0" layoutY="308.0" prefHeight="225.0" prefWidth="258.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="Status" layoutX="39.0" layoutY="575.0" prefHeight="18.0" prefWidth="457.0" />
+   </children>
+</AnchorPane>
